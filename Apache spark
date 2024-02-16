@@ -1,0 +1,88 @@
+Apache Spark
+
+spark Interview questions
+
+Source: Data Savvy (YouTube)
+
+Q1.  RDD vs DataFrame vs Datasets
+
+Q2. Repartition vs Coalesce
+
+Q3. Partition vs bucketing
+	what is partitioning
+	what is bucketing
+	when to use partitioning
+	when to use bucketing
+	Small file problem
+	bucketing in hive vs spark: https://youtu.be/Kr_AAkzGZsI?si=FATqBoNNaP3Cql8f&t=324
+
+	size of each bucket = total data size / 128MB
+(128Mb is default data block size for hdfs)
+
+Q4. Avro vs Parquet
+
+Q5. Executor vs Executor core
+EXECUTOR : YARN container running on one of the slave machines or number  of jvms
+Executor core : thread started by one of the executor
+
+Q6. Static pruning, Dynamic partition pruning, spark performance tuning
+Sub question : what is threshold size limit for broadcast join
+
+
+Q7. 10 ways spark performance tuning
+1. Tree reduce or tree aggregate 
+2. Kryo serialization
+3. 
+
+Q8. Spark executor tuning, deciding number of executors and 
+
+
+Q9. Spark lineage vs DAG
+
+Q10. Why spark dataset is type safe
+
+Q11. Spark broadcast variables
+
+Q12. What is spark execution model?
+
+Q13. What is role of spark context?
+
+Q14. Difference between client and cluster mode
+
+Q15. What is partition skew, reasons for it. How to solve partition skew issues?
+
+Q16. what is a broadcast join in apache spark
+
+Q17. what is the difference between partition and bucketing
+
+Q18. What are different types of joins in Spark
+
+Q19. why count when used with group by is a transformation else its an action.
+
+Q20. If your spark job is running slow how would you approach to debug it.
+
+Q21. Difference between managed table & external table. When do you go about creating exernal tables.
+
+Q22. Why we are not using mapreduce these days. what are similarities between spark and mapReduce.
+
+Q23. How do you handle your pyspark code deployment, Explain about the CICD process.
+
+Q24. Have you used caching in your project, when & where do you consider using it.
+
+Q25. how to estimate the amount of resources for your spark job.
+
+Q26. difference between narrow and wide transformation
+
+Q27. difference between dataframe and dataset
+
+Q28. If some job failed with out of memory error in production, what will be you approach to debug that
+
+Q29. what is DAG & how that helps.
+
+Q30. which version control do you use
+
+Q31. how do you test your spark code
+
+Q32. what is shuffling, why we should think about minimizing it.
+
+Q33. if 199/200 partitions are getting executed but after 1 hour you are getting error.What things you will do?
