@@ -6,7 +6,7 @@
 ### Q1. RDD vs DataFrame vs Datasets
 
 **Answer:**
-- **RDD (Resilient Distributed Dataset)**: The fundamental data structure of Spark, RDDs are immutable, distributed collections of objects that can be processed in parallel. They support two types of operations: transformations (e.g., map, filter) and actions (e.g., count, collect). RDDs are type-safe but can be less efficient due to lack of optimization.
+- **RDD (Resilient Distributed Dataset)**: The fundamental data structure of Spark, RDDs are immutable, distributed collections of objects that can be processed in parallel. They support two types of operations: transformations (e.g., map, filter) and actions (e.g., count, collect). RDDs are type-safe but can be less efficient due to a lack of optimization.
 - **DataFrame**: A distributed collection of data organized into named columns, similar to a table in a relational database. DataFrames provide a higher-level abstraction than RDDs and use Catalyst optimizer for optimization, resulting in better performance. They are not type-safe.
 - **Dataset**: A combination of RDDs and DataFrames, Datasets provide the best of both worlds with the ability to apply functional programming operations and the optimization benefits of DataFrames. Datasets are type-safe and use Catalyst for optimization.
 
@@ -14,13 +14,13 @@
 
 **Answer:**
 - **Repartition**: Increases or decreases the number of partitions in a DataFrame or RDD. It involves a full shuffle of data across the network, making it an expensive operation. It is useful for increasing parallelism.
-- **Coalesce**: Reduces the number of partitions without a full shuffle. It combines data from multiple partitions into fewer partitions, which is more efficient than repartitioning. It is useful for reducing the number of partitions, especially after filtering operations.
+- **Coalesce**: Reduces the number of partitions without a full shuffle. It combines data from multiple partitions into fewer partitions, which is more efficient than repartitioning. It reduces the number of partitions, especially after filtering operations.
 
 ### Q3. Partition vs Bucketing
 
 **Answer:**
 - **Partitioning**: Divides data into distinct parts based on a column value. Each partition is a sub-directory in the file system. Partitioning helps in efficient data retrieval but can lead to small file problems if not managed properly.
-- **Bucketing**: Organizes data into fixed-size parts based on a hash function of a column. Bucketing can help with query performance by reducing the amount of data to scan. Bucketing in Spark is different from Hive as it involves additional sorting within each bucket.
+- **Bucketing**: Organizes data into fixed-size parts based on a hash function of a column. Bucketing can help with query performance by reducing the amount of data to scan. Bucketing in Spark differs from Hive as it involves additional sorting within each bucket.
 
 **When to use:**
 - **Partitioning**: When queries frequently filter on a specific column, partitioning can improve query performance.
@@ -186,8 +186,8 @@
 ### Q26. Difference Between Narrow and Wide Transformation
 
 **Answer:**
-- **Narrow Transformation**: Operations like `map`, `filter`, where each input partition contributes to only one output partition. No shuffle.
-- **Wide Transformation**: Operations like `groupByKey`, `join`, where input partitions contribute to multiple output partitions. Causes shuffle.
+- **Narrow Transformation**: Operations like `map`, and `filter`, where each input partition contributes to only one output partition. No shuffle.
+- **Wide Transformation**: Operations like `groupByKey`, and `join`, where input partitions contribute to multiple output partitions. Causes shuffle.
 
 ### Q27. Difference Between DataFrame and Dataset
 
