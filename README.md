@@ -39,6 +39,7 @@ This repository is a comprehensive guide for preparing for technical interviews.
 - [ ] [Java Quick Reference](https://quickref.me/java)
 - [ ] [Pitt CSC Repositories](https://github.com/orgs/pittcsc/repositories?type=all)
 - [ ] [The Big Data Show](https://thebigdatashow.me/)
+- [ ] [Reddit Post](https://www.reddit.com/r/learnprogramming/comments/3gpvyx/algorithms_and_data_structures_cheat_sheets/)
 - [ ] [Pitt CSC GitHub](https://github.com/pittcsc)
 - [ ] [30 Days of Data Structures and Algorithms and System Design Simplified](https://medium.com/coders-mojo/day-1-of-30-days-of-data-structures-and-algorithms-and-system-design-simplified-dsa-and-system-965e860ec677)
 - [ ] [Sammorozov GitHub](https://github.com/sammorozov)
