@@ -36,6 +36,7 @@ This repository is a comprehensive guide for preparing for technical interviews.
 
 ## Cheat Sheets:
 
+- [ ] [Job boards for data engineers] (https://towardsdatascience.com/top-career-websites-for-data-engineers-6b3ca8205b26)
 - [ ] [Java Quick Reference](https://quickref.me/java)
 - [ ] [Pitt CSC Repositories](https://github.com/orgs/pittcsc/repositories?type=all)
 - [ ] [The Big Data Show](https://thebigdatashow.me/)
